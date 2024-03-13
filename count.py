@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://github.com/dhanushramudri'
+url = 'https://github.com/SimonHoiberg'
 
 totaldata = {}
 
