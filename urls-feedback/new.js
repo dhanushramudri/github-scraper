@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-
+console.log(process.env.API_KEY);
 app.use(bodyParser.json());
 app.use(cors());
 const role = "frontend Developer (fresher)"; // Fixed typo in "fontend" to "frontend"
@@ -40,7 +40,7 @@ const runPythonScript = (pythonScript, args) => {
 };
 
 // Run the Python script to get the scraped URLs
-const pythonScrapingURL = "https://github.com/SimonHoiberg";
+const pythonScrapingURL = "https://github.com/dhanushramudri";
 runPythonScript("./tester.py", [pythonScrapingURL]).then((total_urls) => {
   console.log(`Scraped URLs: ${total_urls}`);
 

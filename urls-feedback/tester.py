@@ -30,7 +30,7 @@ def get_all_urls(url):
         print(f"Error: {e}")
 
 # Replace the URL with the one you want to scrape
-url_to_scrape = "https://github.com/SimonHoiberg"
+url_to_scrape = "https://github.com/dhanushramudri"
 total_urls = get_all_urls(url_to_scrape)
 
 # Print the total URLs
